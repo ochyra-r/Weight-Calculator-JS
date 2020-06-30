@@ -1,0 +1,103 @@
+:root {
+  /* --primary-color: #519872;
+  --primary-color-light: #bec5ad;
+  --primary-color-dark: #3b5249;
+
+	--secondary-color: #34252f; */
+
+  --primary-color: #0075ff;
+  --primary-color-light: #fff;
+  --primary-color-dark: #005cc8;
+
+  --secondary-color: #34252f;
+
+  --max-width: 320px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color-light);
+}
+
+html {
+  color: var(--secondary-color);
+}
+
+.header {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.content {
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  margin: 15px 0;
+  font-family: inherit;
+  font-size: inherit;
+  flex: 1;
+}
+
+.form__data {
+  display: flex;
+  align-items: center;
+}
+
+.form__result {
+  margin-left: 10px;
+}
+
+.form__button {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary-color-dark);
+  border: 3px solid var(--primary-color-dark);
+  padding: 10px 20px;
+  font-size: 24px;
+  outline: none;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in,
+    border-color 0.1s ease-in, transform 0.1s ease-in;
+}
+
+.form__button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+.form__button:active {
+  transform: scale(0.95);
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result__paragraph {
+  padding: 2px 0;
+}
+
+@media (min-width: 720px) {
+  :root {
+    --max-width: 500px;
+  }
+}

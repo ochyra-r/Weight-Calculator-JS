@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">
+        Desired Weight Calculator
+      </h1>
+    </header>
+    <main class="content">
+      <section class="form" data-form>
+        <article class="form__item">
+          <label for="weight-initial" class="form__label"
+            >Initial Weight:</label
+          >
+          <div class="form__data">
+            <input
+              type="range"
+              name="weight-initial"
+              id="weight-initial"
+              class="form__input"
+              step="1"
+            />
+            <p class="form__result" data-initial-weight-result></p>
+          </div>
+        </article>
+        <article class="form__item">
+          <label for="weight-desired" class="form__label"
+            >Desired Weight:</label
+          >
+          <div class="form__data">
+            <input
+              type="range"
+              name="weight-desired"
+              id="weight-desired"
+              class="form__input"
+              step="1"
+            />
+            <p class="form__result" data-desired-weight-result></p>
+          </div>
+        </article>
+        <article class="form__item">
+          <label for="height" class="form__label">Height:</label>
+          <div class="form__data">
+            <input
+              type="range"
+              name="height"
+              id="height"
+              class="form__input"
+              step="1"
+            />
+            <p class="form__result" data-height-result></p>
+          </div>
+        </article>
+        <article class="form__item">
+          <label for="start-date" class="form__label">Start date:</label>
+          <div class="form__data">
+            <input
+              type="date"
+              name="start-date"
+              id="start-date"
+              class="form__input"
+            />
+          </div>
+        </article>
+        <article class="form__item">
+          <label for="end-date" class="form__label">End date:</label>
+          <div class="form__data">
+            <input
+              type="date"
+              name="end-date"
+              id="end-date"
+              class="form__input"
+            />
+          </div>
+        </article>
+        <button class="form__button" data-button>Count</button>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <script>
+      const app = new App();
+
+      app.initializeApp();
+    </script>
+  </body>
+</html>
